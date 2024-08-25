@@ -6,6 +6,7 @@ const ThemeSwitcher = dynamic(() => import('./ThemeSwitcher'), {
 });
 
 import MountainIcon from '@/app/components/icons/MountainIcon';
+import { SignIn } from './features/auth/auth-components';
 
 export default function Header() {
   return (
@@ -14,6 +15,7 @@ export default function Header() {
         <MountainIcon className="h-6 w-6" />
         <span className="sr-only">Acme Inc</span>
       </div>
+      <SignIn />
       <ThemeSwitcher />
     </header>
   );
